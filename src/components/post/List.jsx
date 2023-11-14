@@ -12,12 +12,8 @@ const PostList = ({ postList }) => {
             <Link href={`/post/${post.slug}`} className="title">
               {post.title}
             </Link>
+            <div className="description">{post.description}</div>
             <div className="date">{post.date}</div>
-            <div className="categories">
-              {post.categories.map((category) => {
-                return <div key={category}>{category}</div>;
-              })}
-            </div>
           </div>
         );
       })}
@@ -25,22 +21,22 @@ const PostList = ({ postList }) => {
   );
 };
 const StyledPostList = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   .post-item {
     padding: 30px 0;
-    border-bottom: 1px solid #dddddd;
-    &:first-child {
-      border-top: 1px solid #dddddd;
-    }
     .title {
-      font-weight: 500;
-      font-size: 20px;
+      font-weight: 700;
+      font-size: 2.4rem;
       &:hover {
-        color: #1f883d;
+        color: #008CF6;
       }
     }
+    .description {
+
+    }
     .date {
-      font-size: 14px;
+      font-size: 1.4rem;
       margin-top: 6px;
       color: #666;
     }

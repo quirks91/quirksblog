@@ -6,6 +6,11 @@ export const GlobalStyle = createGlobalStyle`
   :after {
     ${reset};
   }
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
   html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -13,19 +18,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: ${wanted.style.fontFamily};
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.8;
-    color: #000;
-    background: #fff;
-    -webkit-text-size-adjust: 100%;
-    min-width: 320px;
-    &.is-mobile {
-      font-size: 12px;
-    }
-    &.is-scroll-lock {
-      overflow: hidden;
-    }
+    font-size: 1.6rem;
   }
   ol,
   ul {
@@ -43,6 +37,9 @@ export const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
+  }
+  a:visited {
+    color: inherit
   }
   button {
     border: none;
