@@ -13,6 +13,9 @@ export async function generateMetadata() {
     alternates: {
       canonical: process.env.NEXT_PUBLIC_BASE_URL,
     },
+    icons: {
+      icon: "/favicon.png"
+    }
   };
 }
 

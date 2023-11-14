@@ -28,12 +28,12 @@ const StyledPostList = styled.div`
     .title {
       font-weight: 700;
       font-size: 2.4rem;
+      color: black;
       &:hover {
-        color: #008CF6;
+        color: #008cf6;
       }
     }
     .description {
-
     }
     .date {
       font-size: 1.4rem;
