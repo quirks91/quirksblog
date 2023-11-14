@@ -2,8 +2,8 @@ import Template from "@/components/layout/Template";
 import StyledComponentsRegistry from "@/styles/registry";
 
 export async function generateMetadata() {
-  const title = "블로그 제목";
-  const description = "블로그 설명";
+  const title = "Quirks91 | Dev | Tech | Archive";
+  const description = "초보 블로거로 개발, 기술, 잡담 등 생각나는 여러 글을 작성합니다.";
 
   return {
     title,
